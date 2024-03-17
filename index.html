@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header>
         <div class="header-logo">
             <img src="./assets/logo.png" alt="Logo">
         </div>
         <div class="header-nav">
             <nav>
-                <a href="">Services</a>
-                <a href="">Portfolios</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolios</a>
                 <a href="">Experience</a>
                 <a href="">Blog</a>
                 <button type="button" class="btn-nav"><i class="bi bi-three-dots"></i></button>
@@ -26,6 +27,7 @@
             <button type="button" class="btn-secondary btn-resume">Resume</button>
         </div>
     </header>
+    <!-- HERO -->
     <section class="hero-section">
         <div class="hero-text">
             <div class="hero-span">
@@ -44,6 +46,82 @@
         <div class="hero-photo-container">
             <div class="bg-rotate"></div>
             <div class="hero-photo"><img src="./assets/profile-picture.png" alt="Foto de perfil."></div>
+        </div>
+    </section>
+    <!-- SERVICES -->
+    <section class="services-section">
+        <div class="services-title" id="services">
+            <div class="services-span">
+                <hr>
+                <span>Services</span>
+            </div>
+            <h2>Specialized in</h2>
+        </div>
+        <div class="services-cards">
+            <article>
+                <i class="bi bi-stars"></i>
+                <h3>UI/UX Design</h3>
+                <p>Turn what you have in mind of a digital product into reality. For any platform you consider.</p>
+            </article>
+            <article>
+                <i class="bi bi-stack"></i>
+                <h3>Application Development</h3>
+                <p>Standard designing, building, and implementing your applications with documentation.
+                </p>
+            </article>
+            <article>
+                <i class="bi bi-globe"></i>
+                <h3>Web Development</h3>
+                <p>Create and maintain your websites and also take care of its performance and traffic capacity.</p>
+            </article>
+        </div>
+    </section>
+    <!-- PORTFOLIO -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="portfolio-top">
+            <div class="portfolio-title">
+                <div class="portfolio-span">
+                    <hr>
+                    <span>MY WORKS</span>
+                </div>
+                <h2>Featured Portfolios</h2>
+            </div>
+            <div class="portfolio-nav">
+                <i class="bi bi-chevron-left"></i>
+                <i class="bi bi-chevron-right"></i>
+            </div>
+        </div>
+        <div class="portfolio-card-div">
+            <div class="portfolio-card">
+                <img src="./assets/portfolio-cards-1.jpeg" alt="Agency Website">
+                <div class="portfolio-card-text">
+                    <h3>Agency Website.</h3>
+                    <div class="portfolio-card-links">
+                        <button>WordPress</button>
+                        <button><i class="bi bi-link"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="./assets/portfolio-cards-2.jpeg" alt="Dashboard Website">
+                <div class="portfolio-card-text">
+                    <h3>Dashboard Website.</h3>
+                    <div class="portfolio-card-links">
+                        <button>React</button>
+                        <button><i class="bi bi-link"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="./assets/portfolio-cards-3.jpeg" alt="Support Center Website">
+                <div class="portfolio-card-text">
+                    <h3>Support Center Website.</h3>
+                    <div class="portfolio-card-links">
+                        <button>PHP</button>
+                        <button><i class="bi bi-link"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
