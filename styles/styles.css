@@ -699,3 +699,292 @@ header .header-end .btn-resume{
     font-size: 0.9rem;
     color: var(--light-primary-color);
 }
+
+/* -------------------- TESTIMONIALS -------------------- */
+
+.testimonials-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    padding: 6rem 5rem;
+    background-color: var(--secondary-bg-color);
+}
+
+/* Testimonials Title */
+
+.testimonials-section .testimonials-title .testimonials-span{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-section .testimonials-title .testimonials-span hr{
+    width: 1rem;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: var(--light-primary-color);
+    
+}
+
+.testimonials-section .testimonials-title .testimonials-span span {
+    color: var(--light-primary-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5em;
+}
+
+.testimonials-section .testimonials-title h2{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 8rem;
+}
+
+/* Testimonials Cards */
+
+.testimonials-section .testimonials-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials-section .testimonials-cards article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 5rem 2rem 1.5rem;
+    background-color: var(--primary-bg-color);
+    width: 31%;
+    max-width: 31%;
+    margin-bottom: 4rem;
+}
+
+.testimonials-section .testimonials-cards article img{
+    width: 6rem;
+    max-width: 6rem;
+    height: 6rem;
+    max-height: 6rem;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -3rem;
+}
+
+.testimonials-section .testimonials-cards article p{
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.testimonials-section .testimonials-cards article .testimonials-name{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+
+.testimonials-section .testimonials-cards article .testimonials-profesion{
+    font-weight: 500;
+    font-size: 0.8rem;
+    background-color: var(--secondary-bg-color);
+    color: var(--light-primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    width: fit-content;
+    margin-right: auto;
+}
+
+/* -------------------- EDUCATION -------------------- */
+
+.education-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 6rem 5rem;
+}
+
+/* Education Left */
+
+.education-section .education-left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 40%;
+}
+
+.education-section .education-left .education-title .education-span{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.education-section .education-left .education-title .education-span hr{
+    width: 1rem;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: var(--light-primary-color);
+    
+}
+
+.education-section .education-left .education-title .education-span span {
+    color: var(--light-primary-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5em;
+}
+
+.education-section .education-left .education-title h2{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 8rem;
+}
+
+.education-section .education-left .education-card-container{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.education-section .education-left .education-card-container hr{
+    position: absolute;
+    height: 280px;
+    width: 1px;
+    max-width: 1px;
+    left: 1.4rem;
+    top: 25px;
+    border: 1px solid #F1F1F1
+}
+
+.education-section .education-left .education-card-container .education-card{
+    margin-bottom: 2rem;
+    display: list-item;
+    list-style: disc;
+    margin-left: 3rem;
+}
+
+.education-section .education-left .education-card-container .education-card::marker{
+    font-size: 2.5rem;
+    color: #F1F1F1;
+}
+
+.education-section .education-left .education-card-container .education-card h3{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+    display: block;
+}
+
+.education-section .education-left .education-card-container .education-card .education-degree{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--light-primary-color);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.education-section .education-left .education-card-container .education-card .education-date{
+    font-weight: 500;
+    font-size: 0.8rem;
+    display: block;
+}
+
+/* Education Right */
+
+.education-section .education-right{
+    width: 60%;
+    max-width: 60%;
+}
+
+.education-section .education-right p{
+    font-weight: 400;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: var(--light-primary-color);
+    margin-bottom: 4rem;
+    margin-top: 14rem;
+    max-width: 100%;
+}
+
+.education-section .education-right .education-skills{
+    margin-bottom: 2.5rem;
+}
+
+.education-section .education-right .education-skills span{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.education-section .education-right .education-skills .react-bar{
+    width: 70%;
+    max-width: 70%;
+    height: 8px;
+    background-color: var(--light-secondary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.education-section .education-right .education-skills .react-bar hr{
+    position: absolute;
+    left: 0;
+    border: 4px solid var(--secondary-color);
+    width: 67%;
+    max-width: 67%;
+}
+
+.education-section .education-right .education-skills .angular-bar{
+    width: 70%;
+    max-width: 70%;
+    height: 8px;
+    background-color: var(--light-secondary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.education-section .education-right .education-skills .angular-bar hr{
+    position: absolute;
+    left: 0;
+    border: 4px solid var(--secondary-color);
+    width: 48%;
+    max-width: 48%;
+}
+
+.education-section .education-right .education-skills .javascript-bar{
+    width: 70%;
+    max-width: 70%;
+    height: 8px;
+    background-color: var(--light-secondary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.education-section .education-right .education-skills .javascript-bar hr{
+    position: absolute;
+    left: 0;
+    border: 4px solid var(--secondary-color);
+    width: 65%;
+    max-width: 65%;
+}
+
+/* -------------------- FORM/CONTACT -------------------- */
+
