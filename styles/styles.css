@@ -859,7 +859,7 @@ header .header-end .btn-resume{
     max-width: 100%;
 }
 
-.education-section .education-left .education-card-container hr{
+.education-section .education-left .education-card-container .timeline hr{
     position: absolute;
     height: 280px;
     width: 1px;
