@@ -988,3 +988,143 @@ header .header-end .btn-resume{
 
 /* -------------------- FORM/CONTACT -------------------- */
 
+.form-section{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--secondary-bg-color);
+    padding: 6rem 5rem;
+}
+
+/* Form */
+
+.form-section form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 50%;
+}
+
+.form-section form .name-input{
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--light-primary-color);
+}
+
+.form-section form .email-input{
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--light-primary-color);
+}
+
+.form-section form .message-input{
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--light-primary-color);
+    resize: none;
+}
+
+.form-section form .btn-input{
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: var(--secondary-color);
+    color: var(--primary-bg-color);
+}
+
+/* Contact */
+
+.form-section .contact-container{
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem 6.5rem;
+}
+
+.form-section .contact-container .contact-div{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.form-section .contact-container .contact-div i{
+    color: var(--secondary-color);
+    background-color: var(--light-secondary-color);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.form-section .contact-container .contact-div .contact-span{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+}
+
+.form-section .contact-container .contact-div .contact-span h3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.form-section .contact-container .contact-div .contact-span span{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--light-primary-color);
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 6rem 5rem;
+}
+
+footer .footer-icons{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .footer-icons a i{
+    color: var(--light-primary-color);
+}
+
+footer span{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--light-primary-color);
+}
+
+footer span b{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--light-primary-color);
+}
