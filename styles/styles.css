@@ -1274,6 +1274,19 @@ footer span b{
 
 @media screen and (max-width:576px){
 
+    html{
+        font-size: 13px;
+    }
+
+    .hero-section .hero-text{
+        align-items: center;
+    }
+
+    .hero-section .hero-text p{
+        width: 100%;
+        max-width: 100%;
+    }
+
     .services-section .services-cards article{
         width: 80%;
         max-width: 80%;
@@ -1311,6 +1324,7 @@ footer span b{
 
     .experience-section .experience-left .experience-nav ul{
         flex-direction: row;
+        flex-wrap: wrap;
         margin-bottom: 4rem;
     }
 
@@ -1330,5 +1344,9 @@ footer span b{
 
     .education-section .education-left .education-card-container .timeline hr{
         height: 240px;
+    }
+
+    header .header-end .btn-nav{
+        display: none;
     }
 }
