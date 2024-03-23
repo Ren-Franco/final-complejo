@@ -52,6 +52,13 @@ button:hover{
     border: none;
 }
 
+.btn-media{
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+}
+
 /* -------------------- HEADER -------------------- */
 
 header {
@@ -250,6 +257,8 @@ header .header-end .btn-resume{
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .services-section .services-cards article{
@@ -260,6 +269,9 @@ header .header-end .btn-resume{
     padding: 3rem;
     background-color: var(--primary-bg-color);
     border-radius: 8px;
+    width: 33%;
+    max-width: 33%;
+    margin-bottom: 5rem;
 }
 
 .services-section .services-cards article i{
@@ -274,6 +286,7 @@ header .header-end .btn-resume{
     font-family: var(--secondary-font);
     font-weight: 500;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .services-section .services-cards article p{
@@ -643,8 +656,14 @@ header .header-end .btn-resume{
     display: flex;
     flex-direction: column;
     border-radius: 8px;
+    margin-bottom: 8rem;
+    transition: 0.5s;
 }
 
+.blog-section .blog-cards article:hover{
+    box-shadow: 0 0 10px #00000062;
+    transition: 0.2s;
+}
 .blog-section .blog-cards article img{
     width: 100%;
     max-width: 100%;
@@ -662,7 +681,6 @@ header .header-end .btn-resume{
     border-bottom-left-radius: 8px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 8rem;
 }
 
 .blog-section .blog-cards article .blog-card-text h3{
@@ -1005,6 +1023,12 @@ header .header-end .btn-resume{
     max-width: 50%;
 }
 
+.form-section form .name-input:focus{
+    outline: 1px solid var(--light-secondary-color);
+    box-shadow: 0 0 5px #00000062;
+    transition: 0.2s;
+}
+
 .form-section form .name-input{
     width: 100%;
     max-width: 100%;
@@ -1017,6 +1041,17 @@ header .header-end .btn-resume{
     color: var(--light-primary-color);
 }
 
+.form-section form .email-input:focus{
+    outline: 1px solid var(--light-secondary-color);
+    box-shadow: 0 0 5px #00000062;
+    transition: 0.2s;
+}
+
+.form-section form .email-input:invalid{
+    box-shadow: 0 0 5px #9a000062;
+    transition: 0.2s;
+}
+
 .form-section form .email-input{
     width: 100%;
     max-width: 100%;
@@ -1027,6 +1062,12 @@ header .header-end .btn-resume{
     font-size: 0.8rem;
     font-weight: 400;
     color: var(--light-primary-color);
+}
+
+.form-section form .message-input:focus{
+    outline: 1px solid var(--light-secondary-color);
+    box-shadow: 0 0 5px #00000062;
+    transition: 0.2s;
 }
 
 .form-section form .message-input{
@@ -1127,4 +1168,167 @@ footer span b{
     font-weight: 500;
     font-size: 0.8rem;
     color: var(--light-primary-color);
+}
+
+/* -------------------- MEDIA QUERY -------------------- */
+
+@media screen and (max-width:1024px){
+    /* HEADER */
+
+    /* HERO */
+    .hero-section{
+        align-content: center;
+        justify-content: center;
+    }
+
+    .hero-text p{
+        text-align: center;
+    }
+
+    .hero-socials{
+        justify-content: center;
+    }
+
+    .hero-photo-container{
+        display: none;
+    }
+
+    /* SERVICES */
+
+    .services-section .services-cards{
+        flex-direction: column;
+    }
+
+    .services-section .services-cards article{
+        width: 50%;
+        max-width: 50%;
+    }
+
+    /* PORFOLIOS */
+    .portfolio-section .portfolio-top .portfolio-nav{
+        display: none;
+    }
+
+    .portfolio-section .portfolio-card-div{
+        flex-direction: column;
+    }
+
+    .portfolio-section .portfolio-card-div .portfolio-card{
+        width: 50%;
+        max-width: 50%;
+        margin-bottom: 4rem;
+    }
+
+    /* BLOG */
+
+    .blog-section .blog-cards{
+        flex-direction: column;
+    }
+
+    .blog-section .blog-cards article{
+        width: 50%;
+        max-width: 50%;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials-section .testimonials-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-section .testimonials-cards article{
+        width: 50%;
+        max-width: 50%;
+        margin-bottom: 6rem;
+    }
+
+    header .header-nav{
+        display: none;
+    }
+
+    header .header-end .btn-resume{
+        display: none;
+    }
+
+    header .header-end .btn-media{
+        display: inline;
+    }
+}
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 14px;
+    }
+
+    .form-section{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .form-section form{
+        width: 80%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:576px){
+
+    .services-section .services-cards article{
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .portfolio-section .portfolio-card-div .portfolio-card{
+        width: 80%;
+        max-width: 80%;
+        margin-bottom: 4rem;
+    }
+
+    .blog-section .blog-cards article{
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .testimonials-section .testimonials-cards article{
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .experience-section {
+        flex-direction: column;
+    }
+
+    .experience-section .experience-left{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .experience-section .experience-right{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .experience-section .experience-left .experience-nav ul{
+        flex-direction: row;
+        margin-bottom: 4rem;
+    }
+
+    .education-section {
+        flex-direction: column;
+    }
+
+    .education-section .education-left{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .education-section .education-right{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .education-section .education-left .education-card-container .timeline hr{
+        height: 240px;
+    }
 }
